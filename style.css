@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Tahoma, sans-serif;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden; /*isto esconde tudo o que va para alem do eixo x*/
+}
+
+body {
+	background-image: url('background.jpg'); 
+	background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+	display: block;
+	margin: 0;
+    padding: 0;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		background-image: url('background_mobile.jpg'); 
+	}
+}
+
+
+div#div-principal {
+	text-align: center; 
+	margin-top: 250px; 
+	background-color: white; 
+	opacity: 0.65;
+}
+
+
+/* ------------------------ SCROLLBAR ------------------------ */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #27ae60; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #219251; 
+}
+
